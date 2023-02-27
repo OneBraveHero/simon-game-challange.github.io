@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+<audio id="game-over">
+  <source src="sounds/wrong.mp3">
+</audio>
+
+      <div type="button" id="green" class="1  btn green">
+        <audio id="sound-green">
+          <source src="sounds/green.mp3">
+        </audio>
+      </div>
+
+      <div type="button" id="red" class=" 2 btn red">
+        <audio id="sound-red">
+          <source src="sounds/red.mp3">
+        </audio>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class=" 3 btn yellow">
+        <audio id="sound-yellow">
+          <source src="sounds/yellow.mp3">
+        </audio>
+      </div>
+      <div type="button" id="blue" class=" 4 btn blue">
+        <audio id="sound-blue">
+          <source src="sounds/blue.mp3">
+        </audio>
+      </div>
+
+    </div>
+
+  </div>
+
+  <audio id="sound">
+    <source src="sounds/green.mp3">
+    <source src="sounds/red.mp3">
+    <source src="sounds/yellow.mp3">
+    <source src="sounds/blue.mp3">
+  </audio>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>\
+  <script src="game.js"></script>\
+</body>
+
+</html>
